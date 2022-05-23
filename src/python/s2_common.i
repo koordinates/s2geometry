@@ -498,17 +498,18 @@ class S2Point {
 %unignore S2CellUnion::Contains;
 %unignore S2CellUnion::Decode;
 %unignore S2CellUnion::Denormalize(int, int, std::vector<S2CellId>*) const;
+%unignore S2CellUnion::Difference;
 %unignore S2CellUnion::Encode;
 %unignore S2CellUnion::ExactArea;
 %unignore S2CellUnion::FromNormalized(std::vector<S2CellId>);
 %unignore S2CellUnion::GetCapBound() const;
-%unignore S2CellUnion::GetDifference;
 %unignore S2CellUnion::GetRectBound;
 %unignore S2CellUnion::Init(std::vector<uint64> const &);
 %unignore S2CellUnion::Intersection;
 %unignore S2CellUnion::Intersects;
 %unignore S2CellUnion::IsNormalized() const;
 %unignore S2CellUnion::MayIntersect(const S2Cell&) const;
+%unignore S2CellUnion::Union;
 // SWIG doesn't handle disambiguation of the overloaded Normalize methods, so
 // the Normalize() instance method is renamed to NormalizeS2CellUnion.
 %unignore S2CellUnion::Normalize(std::vector<S2CellId>*);
