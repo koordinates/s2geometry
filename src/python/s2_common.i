@@ -649,6 +649,7 @@ class S2Point {
 %unignore S2Polygon::GetDistance;
 %unignore S2Polygon::GetLastDescendant(int) const;
 %unignore S2Polygon::GetOverlapFractions(const S2Polygon&, const S2Polygon&);
+%unignore S2Polygon::GetParent;
 %unignore S2Polygon::GetRectBound;
 %unignore S2Polygon::Init;
 %unignore S2Polygon::InitNested;
