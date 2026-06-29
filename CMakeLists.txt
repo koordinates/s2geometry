@@ -19,7 +19,9 @@ endif()
 # undefined symbol errors since ABSL_HAVE_STD_STRING_VIEW etc will
 # end up defined differently.  There is probably a better way to achieve
 # this than assuming what absl used.
-set(CMAKE_CXX_STANDARD 11)
+if(NOT DEFINED CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 11)
+endif()
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # No compiler-specific extensions, i.e. -std=c++11, not -std=gnu++11.
 set(CMAKE_CXX_EXTENSIONS OFF)
